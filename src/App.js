@@ -9,10 +9,15 @@ function App() {
   return (
     <div className="App">
       <h1>Languages</h1>
-      {
-        data.map((item)=> ( <Card language={item.language} img={item.img}/>
+      {data.map(({id,language,img})=> 
+        ( <Card key={id} language={language} img={img}/>
 
-      ))}
+        ))}
+       {/* {data.map((item)=> {
+          const {language, img,id}= item
+        return  <Card key={id} language={language} img={img}/>
+
+        })} */}
      {/* <Card language={data[0].language} img={data[0].img}/>
       <Card language={data[1].language} img={data[1].img}/>
       <Card language={data[2].language} img={data[2].img}/> */}
