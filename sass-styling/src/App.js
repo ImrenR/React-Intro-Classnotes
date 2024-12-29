@@ -1,12 +1,21 @@
+import Card from "./components/Card";
 import Header from "./components/Header";
-import data from "./data"
-import "./scss/app.scss"
+import data from "./data";
+import "./scss/app.scss";
 function App() {
-   console.log(data);
+  console.log(data);
   return (
     <>
-     
-      <Header/>
+      <Header />
+      {data.map((item) => (
+        <Card
+        key={item.id}
+          name={item.name}
+          job={item.job}
+          comment={item.comment}
+         img={item.img}
+        />
+      ))   }
     </>
   );
 }
