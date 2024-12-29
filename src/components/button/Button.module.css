@@ -1,0 +1,23 @@
+.wrapper{
+  background-color: lightsalmon;
+
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  width: 5rem;
+  border: none;
+  margin: 5px;
+  
+}
+
+.btn-blue{
+  background-color: purple;
+}
+
+.btn-red{
+  background-color: green;
+}

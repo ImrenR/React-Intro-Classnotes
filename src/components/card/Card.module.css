@@ -1,0 +1,14 @@
+.wrapper{
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.images{
+  display: block;
+  width: 300px;
+  margin: 1rem auto;
+  border-radius: 1rem;
+
+}
