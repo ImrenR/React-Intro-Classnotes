@@ -1,1 +1,46 @@
-@import "variables";
+@use "variables";
+
+.container{
+  .card{
+    max-width: 300px;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin:2rem auto;
+    h1{
+      color: rgb(221, 156, 221);
+    }
+    h3{
+      color: purple;
+    }
+    p{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-style: italic;
+    }
+    img {
+     width: 100px;
+     border-radius: 50%;
+     margin: 1.5rem 0;
+
+    }
+    .buttons{
+      button{
+      border:none;
+      border-radius: 1rem;
+      margin-right: 0.5rem;
+    }
+    &:hover{
+cursor: pointer;
+opacity: 0.5;
+    }
+.small{
+  padding: 1rem;
+  background-color: variables.$olive;
+      }
+  .large{
+        padding: 1rem 1.5rem;
+        background-color: variables.$beige;
+    }
+  }
+ }
+}

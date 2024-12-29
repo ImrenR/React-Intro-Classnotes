@@ -1,19 +1,19 @@
-import '../scss/card.module.scss'
+import CardStyle from '../scss/card.module.scss'
 
 const Card =({name,job,comment,img})=>{
   return(
     
-    <div>
-      <div>
+    <div className={CardStyle.container}>
+      <div className={CardStyle.card}>
         <div>
           <h1>{name}</h1>
           <h3>{job}</h3>
           <p>{comment}</p>
-          <img src={img} alt="user" />
+          <img className={CardStyle.images} src={img} alt="user" />
         </div>
-        <div>
-         <button>Small</button>
-         <button>Large</button>
+        <div className={CardStyle.buttons}>
+         <button className={CardStyle.small}>Small</button>
+         <button className={CardStyle.large}>Large</button>
           </div>
       </div>
     </div>
